@@ -82,7 +82,7 @@ const HospitalChangepasswordPage = () => {
                         >
                            ×
                         </Link>
-                        <i class=" mdi mdi-check-underline"></i> &nbsp;
+                        <i className=" mdi mdi-check-underline"></i> &nbsp;
                         {errors.success}
                      </div>
                   )}

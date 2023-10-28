@@ -219,7 +219,7 @@ function AdminProfilePage() {
                         >
                            ×
                         </Link>
-                        <i class=" mdi mdi-check-underline"></i> &nbsp;
+                        <i className=" mdi mdi-check-underline"></i> &nbsp;
                         {notify.success}
                      </div>
                   )}
@@ -233,7 +233,7 @@ function AdminProfilePage() {
                         >
                            ×
                         </Link>
-                        <i class=" mdi mdi-check-underline"></i> &nbsp;
+                        <i className=" mdi mdi-check-underline"></i> &nbsp;
                         {notify.error}
                      </div>
                   )}

@@ -29,7 +29,6 @@ import UserMainLayout from '~/layouts/UserMainLayout'
 import UserLayout from '~/layouts/UserLayout'
 import UserViewInforPage from '~/pages/user/Infor'
 import UserChangePasswordPage from '~/pages/user/ChangePassword'
-import ChatBox from '~/pages/user/chat/ChatBox'
 import UserDashboardPage from '~/pages/user/Dashboard'
 import UserProfile from '~/pages/user/Profile'
 import UserEditProfile from '~/pages/user/Profile/edit'
@@ -118,7 +117,6 @@ const BigRoutes = () => (
          <Route path="dashboard" element={<UserDashboardPage />}></Route>
          <Route path="view-infor" element={<UserViewInforPage />} />
          <Route path="change-password" element={<UserChangePasswordPage />} />
-         <Route path="chat/:id" element={<ChatBox />} />
       </Route>
 
       {/* Private route hospital ***********************/}

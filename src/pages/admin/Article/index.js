@@ -435,7 +435,7 @@ const Article = () => {
 					{selectedArticles.length > 0 ? (
 					<div className={cx('add_box')}>
 						<button data-toggle="modal" data-target="#deleteMany" type="button" className="btn btn-danger ml-2">
-						<i class="fa-solid fa-trash"></i>
+						<i className="fa-solid fa-trash"></i>
 						</button>
 					</div>
 					) : null}
@@ -679,7 +679,7 @@ const Article = () => {
 																data-toggle="modal"
 																data-target="#modalDetail"
 															>
-																<i class="fa-solid fa-circle-info"></i>
+																<i className="fa-solid fa-circle-info"></i>
 															</button>
 														</Tippy>
 													</div>
@@ -839,7 +839,7 @@ const Article = () => {
 									</button>
 								</div>
 								<h6 className='mt-2 ml-2'><i className="fa-solid fa-tags"></i> {articleDetail.name_category} 
-									<span className='ml-3'><i class="fa-solid fa-user-pen"></i> {articleDetail.name_user ? articleDetail.name_user : 'Admin'}</span>
+									<span className='ml-3'><i className="fa-solid fa-user-pen"></i> {articleDetail.name_user ? articleDetail.name_user : 'Admin'}</span>
 								</h6>
 								<div className={` ${cx('view-detail')}`} dangerouslySetInnerHTML={{ __html: articleDetail.content }} />  
 							</div>

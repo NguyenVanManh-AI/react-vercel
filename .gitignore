@@ -26,3 +26,5 @@ yarn-error.log*
 
 /src/router/config.js
 
+
+.vercel

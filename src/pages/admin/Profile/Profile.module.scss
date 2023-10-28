@@ -1,0 +1,27 @@
+.img_circle {
+   border-radius: 50%;
+   padding: 0.25rem;
+   background-color: #fff;
+   border: 1px solid #dee2e6;
+   width: 255px;
+   height: 255px;
+}
+.label_choosefile {
+   background-color: #15a1c7;
+   color: rgb(239, 237, 237);
+   padding: 3px;
+   border-radius: 0.3rem;
+   cursor: pointer;
+   margin-top: 1rem;
+   font-size: 13px;
+   width: 200px;
+   height: 24px;
+}
+.custom_two_colum {
+   padding-left: 0px !important;
+   padding-right: 0px !important;
+}
+.error {
+   font-size: 14px;
+   color: rgb(221, 13, 13);
+}

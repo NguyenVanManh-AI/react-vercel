@@ -1,0 +1,37 @@
+.left_side {
+   width: 240px;
+   background: #fff;
+   bottom: 0;
+   position: absolute;
+   top: 70px;
+}
+.user_box {
+   min-height: 80px;
+   padding: 20px;
+   position: relative;
+
+   img {
+      position: relative;
+      height: 48px;
+      width: 48px;
+   }
+   .user_infor {
+      color: #626773;
+      margin-left: 60px;
+      margin-top: 5px;
+      position: relative;
+      z-index: 99999;
+   }
+}
+.float_left {
+   float: left;
+}
+.rounded_circle {
+   border-radius: 50% !important;
+}
+.user_name {
+   font-weight: 600;
+}
+.text_muted {
+   color: #7a7d84 !important;
+}

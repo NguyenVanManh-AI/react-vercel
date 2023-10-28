@@ -1,0 +1,113 @@
+:root {
+    --mainColor: #96dfe2;
+    --PrimaryColor: hsl(199,100%,33%);
+    --SecondaryColor: hsl(187,85%,43%);
+    --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(201,33%,16%);
+    --textColor: hsl(240,4%,36%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --inputColor: rgb(239,239,239);
+    --bodyColor: rgb(240,240,246);
+    --cardBG: rgb(225,225,225);
+  }
+.form-control:focus {
+    box-shadow: none;
+}
+
+.login {
+    min-height: 100vh;
+    background: var(--mainColor);
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.login-heading {
+    font-weight: 300;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    color: var(--whiteColor) !important;
+    background: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+    border-radius: 30px !important;
+}
+
+.login-input{
+    border: 1px var(--greyText) solid;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    padding: 10px 5px ;
+    width: 100%;
+
+}
+
+.btn-google {
+    color: black !important;
+    background-color: var(--whiteColor);
+}
+
+.social {
+    height: 40px;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    align-items: center;
+    line-height: 40px;
+    align-content: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    a {
+        display: flex;
+        height: 100%;
+        color: var(--blackColor);
+        line-height: 100%;
+        align-content: center;
+        align-items: center;
+        font-weight: 500;
+        padding: 5px;
+        color: var(--whiteColor);
+        width: 100%;
+        justify-content: center;
+        .text-login{
+            font-size: 12px;
+            span {
+                font-size: 20px;
+            }
+        }
+    } 
+    a:hover {
+        text-decoration: none;
+        color: var(--whiteColor);
+    }
+
+    img {
+        height: 100%;
+        padding: 2px;
+        width: auto;
+        border-radius: 40px;
+        background-color: var(--whiteColor);
+        margin-right: 10px;
+    }
+    
+}
+.google {
+    background: var(--blackColor);
+}
+
+.facebook {
+    background-color: #3686d6;
+}
+
+.body-login {
+    border-radius: 20px;
+    background-color: var(--whiteColor);
+}

@@ -1,0 +1,862 @@
+:root {
+  --custom-heading-color: #1b3250;
+}
+
+.non-space {
+  background-color: var(--cardBG) !important;
+  height: 10px;
+}
+
+.header-hospital {
+  background-color: var(--whiteColor);
+  padding-bottom: 30px;
+}
+.header-hospital .breadcrumb {
+  display: flex;
+  min-height: 51px;
+  align-items: center;
+  background: #e3f2ff !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.header-hospital .breadcrumb .first-link {
+  max-width: 12em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-hospital .breadcrumb .first-link a {
+  color: #262626;
+}
+.header-hospital .breadcrumb .between {
+  margin-left: 7px;
+  margin-right: 7px;
+  width: 5px;
+}
+.header-hospital .breadcrumb .second-link {
+  max-width: 12em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-hospital .breadcrumb .second-link a {
+  color: #007bff !important;
+}
+.header-hospital .main-hospital .banner {
+  --image-height: 380px;
+  position: relative;
+  height: var(--image-height);
+  margin-top: 22px;
+  border-radius: 6px;
+}
+.header-hospital .main-hospital .banner .thumbnail-cover {
+  position: relative;
+  width: 100%;
+}
+.header-hospital .main-hospital .banner .thumbnail-cover .thumbnail {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: auto;
+}
+.header-hospital .main-hospital .banner .thumbnail-cover .thumbnail .grid-layout {
+  display: grid;
+  width: 100%;
+  row-gap: 8px;
+}
+.header-hospital .main-hospital .banner .thumbnail-cover .thumbnail .grid-layout img {
+  width: 100%;
+  height: var(--image-height);
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-hospital .main-hospital .infor-hospital {
+  display: flex;
+  gap: 16px;
+}
+.header-hospital .main-hospital .infor-hospital .logo-hospital {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  margin-top: -30px;
+}
+.header-hospital .main-hospital .infor-hospital .logo-hospital img {
+  background-color: white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.15) 0px 4px 7px;
+}
+.header-hospital .main-hospital .infor-hospital .name-hospital {
+  padding: 16px 0px;
+}
+.header-hospital .main-hospital .infor-hospital .name-hospital h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.header-hospital .main-hospital .infor-hospital .name-hospital .address {
+  font-size: 13px;
+  color: var(--textColor);
+}
+
+.body-hospital .list-link {
+  margin-top: 20px;
+  border-bottom: 1px solid var(--cardBG);
+  padding-bottom: 9px;
+}
+.body-hospital .list-link .link-item {
+  font-size: 13px;
+  padding: 10px 0px;
+  margin-right: 20px;
+  color: var(--textColor);
+  font-weight: 600;
+}
+.body-hospital .list-link .active {
+  color: #007bff !important;
+  border-bottom: 2px solid #007bff !important;
+}
+.body-hospital .infor-hospital .timesheet {
+  margin-top: 24px;
+  border-bottom: 1px dashed rgb(228, 232, 236);
+  padding-bottom: 24px;
+}
+.body-hospital .infor-hospital .timesheet h2 {
+  font-size: 16px !important;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.body-hospital .infor-hospital .timesheet .week-working-time {
+  max-width: 650px;
+}
+.body-hospital .infor-hospital .timesheet .week-working-time .working-time {
+  display: flex;
+  margin-top: 8px;
+  justify-content: space-between;
+}
+.body-hospital .infor-hospital .timesheet .week-working-time .working-time p {
+  margin-bottom: 0;
+}
+.body-hospital .infor-hospital .timesheet .week-working-time .working-time .day {
+  min-width: 100px;
+}
+.body-hospital .infor-hospital .timesheet .week-working-time .working-time .time {
+  text-align: right;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.body-hospital .infor-hospital h2 {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  display: flex;
+  font-weight: 700;
+  color: var(--custom-heading-color);
+}
+.body-hospital .infor-hospital .border-heading:before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 15px;
+  background: var(--mainColor);
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.body-hospital .infor-hospital .description {
+  margin-top: 24px;
+}
+.body-hospital .infor-hospital .description .hospital-see-more {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-top: 16px;
+  white-space: pre-line;
+}
+.body-hospital .infor-hospital .list-specialties ol {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.body-hospital .infor-hospital .list-specialties ol li {
+  padding-left: 4px;
+  margin-top: 8px;
+  list-style-type: disc;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item {
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-header button {
+  border: none;
+  background: none;
+  padding-top: 5px;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-header button .see-detail {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primaryColor);
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-collapse .accordion-body {
+  overflow: hidden;
+  transition: height 300ms ease-out 0s;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-collapse .accordion-body .service-body {
+  background: rgb(248, 249, 252);
+  border-radius: 6px;
+  margin-top: 16px;
+  padding: 16px;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-collapse .accordion-body .service-body .service-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-collapse .accordion-body .service-body .service-description {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  font-size: 14px;
+  overflow: hidden;
+  color: var(--blackColor);
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-collapse .accordion-body .service-body .service-fee {
+  display: flex;
+  gap: 10px;
+  color: var(--textColor);
+  font-size: 14px;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-collapse .accordion-body .service-body .service-fee .fee-icon {
+  font-size: 16px;
+}
+.body-hospital .infor-hospital .list-service .accordion .accordion-item .accordion-collapse .accordion-body .service-body .service-fee .fee {
+  color: var(--successColor);
+}
+.body-hospital .infor-hospital .location {
+  margin-top: 20px;
+}
+.body-hospital .service {
+  padding: 1rem 0rem;
+}
+.body-hospital .service .search {
+  position: relative;
+  width: 100%;
+}
+.body-hospital .service .search .input-service {
+  position: relative;
+}
+.body-hospital .service .search .input-service input {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 6px;
+}
+.body-hospital .service .service-list .service-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 16px 0px;
+  border: 1px solid rgb(228, 232, 236);
+  border-radius: 6px;
+  box-shadow: rgba(44, 74, 117, 0.08) 0px 5px 12px;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+.body-hospital .service .service-list .service-card .main-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.body-hospital .service .service-list .service-card .main-card .content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+}
+.body-hospital .service .service-list .service-card .main-card .content .avatar-doctor {
+  text-decoration: none;
+}
+.body-hospital .service .service-list .service-card .main-card .content .avatar-doctor img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info a h6 {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: var(--custom-heading-color);
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info a .department {
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+  color: var(--custom-color, #262626);
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .major {
+  margin-top: 8px;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .major .major-item .major-name-unselect {
+  background: rgb(248, 249, 252);
+  border: 1px solid rgb(248, 249, 252);
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 24px;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .major .major-item .major-name-unselect p {
+  color: rgb(45, 135, 243);
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .major .major-item .major-name {
+  background: rgb(227, 242, 255);
+  border: 1px solid rgb(45, 135, 243);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 24px;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .major .major-item .major-name p {
+  color: rgb(45, 135, 243);
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  color: var(--custom-color, #262626);
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .price .sub {
+  margin-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+}
+.body-hospital .service .service-list .service-card .main-card .content .service-info .price .number {
+  margin-bottom: 0px;
+  color: var(--successColor);
+  font-size: 16px;
+  line-height: 24px;
+}
+.body-hospital .service .service-list .service-card .main-card .infor-hospital {
+  display: flex;
+  width: calc(100% + 32px);
+  padding: 12px 16px;
+  margin-top: 16px;
+  margin-left: -16px;
+  background-color: rgb(248, 249, 252);
+  gap: 8px;
+}
+.body-hospital .service .service-list .service-card .main-card .infor-hospital .avatar-hospital {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+.body-hospital .service .service-list .service-card .main-card .infor-hospital .avatar-hospital img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+.body-hospital .service .service-list .service-card .main-card .detail-hospital {
+  width: 70%;
+  align-content: center;
+  grid-template-areas: "title direction" "title direction" "location direction";
+  grid-template-columns: 1fr 1fr;
+}
+.body-hospital .service .service-list .service-card .main-card .detail-hospital p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+.body-hospital .service .service-list .service-card .main-card .detail-hospital .address-hospital {
+  display: flex;
+  align-items: center;
+}
+.body-hospital .service .service-list .service-card .main-card .detail-hospital .address-hospital .address {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.body-hospital .service .service-list .service-card .main-card .detail-hospital .address-hospital .address p {
+  display: -webkit-box;
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(89, 89, 89);
+}
+.body-hospital .service .service-list .service-card .main-card .btn-book {
+  padding: 9px 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.modal-booking {
+  min-width: 360px;
+  max-width: 360px;
+  background-color: rgb(248, 249, 252);
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 24px;
+}
+.modal-booking .title {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--custom-heading-color);
+  font-weight: 700;
+}
+.modal-booking .advice {
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+}
+.modal-booking .list-choice {
+  margin-block: 24px;
+  width: 100%;
+  display: inline-flex;
+  max-width: 100%;
+  border-bottom: 1px solid #e4e8ec;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  list-style: none;
+}
+.modal-booking .list-choice .active {
+  color: #2d87f3;
+  border-bottom: 3px solid #2d87f3;
+  bottom: -1px;
+  position: relative;
+}
+.modal-booking .list-choice li {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+  font-weight: 600;
+  color: var(--greyText);
+}
+.modal-booking .form-booking {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+.modal-booking .form-booking label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+.modal-booking .form-booking .selected-hospital {
+  position: relative;
+  width: 100%;
+}
+.modal-booking .form-booking .selected-hospital .input-hospital {
+  position: relative;
+}
+.modal-booking .form-booking .selected-hospital .input-hospital input {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  padding: 12px 16px 12px 48px;
+  cursor: not-allowed;
+  width: 100%;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 6px;
+}
+.modal-booking .form-booking .selected-hospital .input-hospital .logo-hospital {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  display: inline-flex;
+  cursor: default;
+  transform: translateY(-50%);
+}
+.modal-booking .form-booking .selected-hospital .input-hospital .logo-hospital img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal-booking .form-booking .input-booking {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+.modal-booking .form-booking .input-booking .department {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+.modal-booking .form-booking .input-booking .select-department {
+  position: relative;
+  border: 1px solid rgb(217, 217, 217);
+  background-position: right 16px center;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+}
+.modal-booking .form-booking .input-booking .select-department .input-department {
+  position: relative;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input {
+  position: relative;
+  width: 100%;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input input {
+  padding: 12px 36px 12px 48px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 6px;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input input:disabled {
+  cursor: not-allowed;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .icon-search {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  display: inline-flex;
+  cursor: default;
+  transform: translateY(-50%);
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .icon-search .icon {
+  width: 24px;
+  max-width: unset;
+  height: 24px;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .icon-down {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: inline-flex;
+  cursor: default;
+  transform: translateY(-50%);
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .icon-down .icon {
+  width: 24px;
+  max-width: unset;
+  height: 24px;
+  font-size: 15px;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .dropdown-departerment {
+  right: 0px;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .dropdown-departerment a {
+  display: flex;
+  gap: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .dropdown-departerment a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto 0px;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .dropdown-departerment a p {
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .dropdown-departerment a p .money {
+  font-size: 14px;
+}
+.modal-booking .form-booking .input-booking .select-department .input-department .dropdown-input .dropdown-departerment li:hover {
+  background-color: #f1f1f1;
+}
+.modal-booking .form-booking .input-booking .btn-booking {
+  background-color: #2d87f3;
+  border: 1px solid #2d87f3;
+  color: #fff;
+}
+.modal-booking .form-booking .input-booking .btn-booking:disabled {
+  background-color: #bfbfbf;
+  border-color: #bfbfbf;
+  color: #fff;
+  cursor: not-allowed;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 6px;
+  overflow: visible;
+}
+.modal-booking .form-booking .input-booking .btn-booking:enabled {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 6px;
+  overflow: visible;
+}
+.modal-booking .form-booking .input-booking .advise {
+  position: relative;
+  margin-top: 20px;
+}
+.modal-booking .form-booking .input-booking .advise ul {
+  padding-left: 0px;
+  width: 100%;
+  display: inline-flex;
+  max-width: 100%;
+  border-bottom: 1px solid #e4e8ec;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+.modal-booking .form-booking .input-booking .advise ul li {
+  color: #2d87f3;
+  border-bottom: 3px solid #2d87f3;
+  bottom: -1px;
+  position: relative;
+  flex: 1 1 0%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+.modal-booking .form-booking .input-booking .advise ul li .title {
+  -webkit-box-align: center;
+  display: flex;
+  align-items: center;
+}
+.modal-booking .form-booking .input-booking .advise ul li .title .content {
+  -webkit-tap-highlight-color: transparent;
+  color: rgb(45, 135, 243) !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  margin-bottom: 0;
+}
+.modal-booking .form-booking .input-booking .advise .booking-description {
+  color: rgb(89, 89, 89);
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.modal-booking .form-booking .input-booking .main-form-booking {
+  background-color: rgb(248, 249, 252);
+  position: relative;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .title-booking {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer {
+  position: relative;
+  padding-top: 0px;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .nav-tabs {
+  margin-top: 20px;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .nav-tabs .nav-item {
+  border: none;
+  text-align: center;
+  font-weight: 600;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .nav-tabs .nav-item .nav-link {
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .nav-tabs .nav-item .active {
+  background: none;
+  color: rgb(45, 135, 243);
+  border-bottom: 2px solid rgb(45, 135, 243);
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .datetime {
+  position: relative;
+  width: 100%;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .datetime .input-cover {
+  position: relative;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .datetime .input-cover input {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  padding: 12px 16px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 6px;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .time-booking {
+  display: grid;
+  margin-top: 24px;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .time-booking button {
+  border-width: 1.5px;
+  border: 1px solid rgb(210, 214, 220);
+  padding: 8px 0px !important;
+  background-color: #fff;
+  color: #2d87f3;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s, border-color 0.3s;
+  width: auto;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .time-booking button span {
+  color: rgb(38, 38, 38);
+  font-weight: 400;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .time-booking .active, .modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .time-booking button:focus {
+  background-color: #2d87f3;
+  border: 1px solid #2d87f3;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 7px 0px !important;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s, border-color 0.3s;
+  width: auto;
+}
+.modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .time-booking .active span, .modal-booking .form-booking .input-booking .main-form-booking .input-datetime .pickerContainer .time-booking button:focus span {
+  color: #fff;
+  font-weight: 400;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.infor-hospital {
+  gap: 16px;
+}
+.infor-hospital .logo-hospital {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  margin-top: -30px;
+}
+.infor-hospital .logo-hospital img {
+  background-color: white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.15) 0px 4px 7px;
+}
+.infor-hospital .name-hospital {
+  padding: 16px 0px;
+}
+.infor-hospital .name-hospital h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.infor-hospital .name-hospital .address {
+  font-size: 13px;
+  color: var(--textColor);
+}/*# sourceMappingURL=hospital.css.map */

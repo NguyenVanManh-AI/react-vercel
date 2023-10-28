@@ -1,0 +1,240 @@
+.home .banner {
+  background-image: url("https://hellobacsi.com/images/homepage-banner/banner-bg.svg");
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+  position: relative;
+}
+.home .banner .banner-left {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.home .banner .banner-left h3 {
+  font-weight: 700;
+}
+.home .banner .banner-left p {
+  margin-top: 20px;
+}
+.home .banner .banner-right {
+  max-width: 290px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+  flex: 1 1 0%;
+  position: absolute;
+  right: 15%;
+  bottom: 0px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home .banner .banner-right span {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.home .banner .banner-right span img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.home .main-section .link-nav {
+  padding: 16px 0px;
+  margin: 8px auto;
+  width: 100%;
+  justify-content: space-between;
+}
+.home .main-section .link-nav .item-link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: var(--whiteColor);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 8px, rgba(0, 0, 0, 0.06) 0px 0px 2px, rgba(0, 0, 0, 0.04) 0px 0px 1px;
+  text-decoration: none;
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.home .main-section .hr hr {
+  -o-border-image: initial;
+     border-image: initial;
+  border-top: 2px dashed rgb(228, 232, 236);
+}
+.home .main-section .top-section {
+  margin: 30px 0px;
+  gap: 16px;
+  display: flex;
+  width: 100%;
+}
+.home .main-section .top-section button {
+  display: flex;
+  justify-content: center;
+  padding: 7px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgb(228, 232, 236);
+  color: rgb(89, 89, 89);
+}
+.home .main-section .top-section .active, .home .main-section .top-section button:focus {
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+  padding: 7px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 0px;
+  background: rgb(227, 242, 255);
+  color: rgb(45, 135, 243);
+}
+.home .main-section .main-section .section-left .article .banner-article, .home .main-section .main-section .section-right .article .banner-article, .home .main-section .main-section .list-article .article .banner-article {
+  min-height: 468px;
+  max-height: 468px;
+  position: relative;
+}
+.home .main-section .main-section .section-left .article .banner-article span, .home .main-section .main-section .section-right .article .banner-article span, .home .main-section .main-section .list-article .article .banner-article span {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  inset: 0px;
+}
+.home .main-section .main-section .section-left .article .banner-article span img, .home .main-section .main-section .section-right .article .banner-article span img, .home .main-section .main-section .list-article .article .banner-article span img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.home .main-section .main-section .section-left .article .content, .home .main-section .main-section .section-right .article .content, .home .main-section .main-section .list-article .article .content {
+  display: flex;
+  flex-direction: column;
+}
+.home .main-section .main-section .section-left .article .content .inner-content, .home .main-section .main-section .section-right .article .content .inner-content, .home .main-section .main-section .list-article .article .content .inner-content {
+  display: flex;
+  flex-direction: column;
+}
+.home .main-section .main-section .section-left .article .content .inner-content .category-name, .home .main-section .main-section .section-right .article .content .inner-content .category-name, .home .main-section .main-section .list-article .article .content .inner-content .category-name {
+  color: rgb(45, 135, 243);
+  align-items: center;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  flex: 1 2 90%;
+  width: 100%;
+}
+.home .main-section .main-section .section-left .article .content .inner-content .category-name .name, .home .main-section .main-section .section-right .article .content .inner-content .category-name .name, .home .main-section .main-section .list-article .article .content .inner-content .category-name .name {
+  color: rgb(45, 135, 243);
+  color: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: left !important;
+}
+.home .main-section .main-section .section-left .article .content .inner-content .category-name .bookmark, .home .main-section .main-section .section-right .article .content .inner-content .category-name .bookmark, .home .main-section .main-section .list-article .article .content .inner-content .category-name .bookmark {
+  text-align: right;
+  color: var(--greyText);
+}
+.home .main-section .main-section .section-left .article .content .inner-content .title-article, .home .main-section .main-section .section-right .article .content .inner-content .title-article, .home .main-section .main-section .list-article .article .content .inner-content .title-article {
+  line-height: 32px;
+  font-weight: 600;
+}
+.home .main-section .main-section .section-left .article .content .inner-content .title-article a, .home .main-section .main-section .section-right .article .content .inner-content .title-article a, .home .main-section .main-section .list-article .article .content .inner-content .title-article a {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--blackColor);
+}
+.home .main-section .main-section .section-left .article .content .inner-content p, .home .main-section .main-section .section-right .article .content .inner-content p, .home .main-section .main-section .list-article .article .content .inner-content p {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  word-break: break-word;
+  overflow: hidden;
+}
+.home .main-section .main-section .section-left .article .content .inner-content .footer-article .img-doctor, .home .main-section .main-section .section-right .article .content .inner-content .footer-article .img-doctor, .home .main-section .main-section .list-article .article .content .inner-content .footer-article .img-doctor {
+  height: 32px;
+  margin-right: 12px;
+  width: 32px;
+  border-radius: 50%;
+}
+.home .main-section .main-section .section-left .article .content .inner-content .footer-article p, .home .main-section .main-section .section-right .article .content .inner-content .footer-article p, .home .main-section .main-section .list-article .article .content .inner-content .footer-article p {
+  font-size: 14px;
+  text-align: left;
+}
+.home .main-section .main-section .section-left .article .content .inner-content .footer-article p .name-doctor, .home .main-section .main-section .section-right .article .content .inner-content .footer-article p .name-doctor, .home .main-section .main-section .list-article .article .content .inner-content .footer-article p .name-doctor {
+  font-weight: 600;
+}
+.home .main-section .main-section .section-right .article .banner-article {
+  min-height: 300px;
+  max-height: 300px;
+}
+.home .main-section .main-section .section-right .article .horizontal {
+  margin-top: 20px;
+  min-height: 150px;
+  max-height: 150px;
+}
+.home .main-section .main-section .list-article .article .banner-article {
+  min-height: 150px;
+}
+.home .main-section .all-hospital-list .all-hospital-card {
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.home .main-section .all-hospital-list .all-hospital-card .book-appointment-button {
+  margin-top: 40px !important;
+  background: var(--gradientColor);
+  font-weight: 600;
+}
+.home .main-section .all-hospital-list .all-hospital-card .book-appointment-button:hover {
+  color: var(--whiteColor);
+}
+.home .main-section .title-list-hospital {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.home .main-section .title-list-hospital h2 {
+  font-weight: 700;
+}/*# sourceMappingURL=home.css.map */

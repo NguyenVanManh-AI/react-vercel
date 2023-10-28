@@ -1,0 +1,159 @@
+:root {
+  --custom-heading-color: #1b3250;
+}
+
+.non-space {
+  background-color: var(--cardBG) !important;
+  height: 10px;
+}
+
+.header-hospital {
+  background-color: var(--whiteColor);
+  padding-bottom: 30px;
+}
+.header-hospital .breadcrumb {
+  display: flex;
+  min-height: 51px;
+  align-items: center;
+  background: #e3f2ff !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.header-hospital .breadcrumb .first-link {
+  max-width: 12em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-hospital .breadcrumb .first-link a {
+  color: #262626;
+}
+.header-hospital .breadcrumb .between {
+  margin-left: 7px;
+  margin-right: 7px;
+  width: 5px;
+}
+.header-hospital .breadcrumb .second-link {
+  max-width: 12em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-hospital .breadcrumb .second-link a {
+  color: #007bff !important;
+}
+
+.header-bmi {
+  background-color: #bcdeff;
+}
+.header-bmi .content-header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 71.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.header-bmi .content-header .padding-header {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+}
+.header-bmi .content-header .padding-header .mantine {
+  max-width: 46.5rem;
+}
+.header-bmi .content-header .padding-header .mantine .content-mantine {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.header-bmi .content-header .padding-header .mantine .content-mantine h1 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 42px;
+  color: var(--custom-heading-color, #262626);
+  font-weight: 600;
+}
+.header-bmi .content-header .padding-header .mantine .content-mantine p {
+  color: #404040;
+  font-size: inherit;
+  line-height: 1.55;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
+.header-bmi .content-header .padding-header .mantine-2 .content-mantine-2 {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0;
+  top: 50%;
+}
+.header-bmi .content-header .padding-header .mantine-2 .content-mantine-2 .image {
+  width: 8.75rem;
+  height: 8.75rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 50%;
+  background: #e3f2ff;
+}
+.header-bmi .content-header .padding-header .mantine-2 .content-mantine-2 .image .image-cover {
+  max-width: 55%;
+  max-height: 55%;
+  position: absolute;
+  top: 25%;
+  right: 25%;
+}
+.header-bmi .content-header .padding-header .mantine-2 .content-mantine-2 .image .image-cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main-bmi .form-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+.main-bmi .form-flex .form-child {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.main-bmi .form-flex .form-child .label {
+  word-break: break-word;
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-flex;
+  gap: 4px;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(89, 89, 89);
+}
+.main-bmi .form-flex .form-child .label p {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0px;
+  color: rgb(64, 64, 64);
+}/*# sourceMappingURL=bmi.css.map */

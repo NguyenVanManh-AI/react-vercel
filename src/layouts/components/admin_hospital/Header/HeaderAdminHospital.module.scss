@@ -1,0 +1,134 @@
+#topnav {
+   background: #2c3e48;
+   position: fixed;
+   left: 0;
+   right: 0;
+   z-index: 100;
+}
+.nav_custom {
+   padding: 0 10px;
+   background: #458bc4;
+   height: 70px;
+}
+.container-fluid {
+   width: 100%;
+   padding-right: 8px;
+   padding-left: 12px;
+   margin-right: auto;
+   margin-left: auto;
+}
+.avatar {
+   width: 45px;
+   height: 45px;
+   margin: 0 auto;
+}
+.nav-link {
+   padding: 0 15px;
+   color: #ffffffb3 !important;
+   min-width: 32px;
+   display: block;
+   line-height: 70px;
+   text-align: center;
+   max-height: 70px;
+
+   &:hover {
+      color: rgb(242, 244, 246) !important;
+   }
+}
+.topnav-menu {
+   li {
+      float: left;
+   }
+}
+.logo-box {
+   float: left;
+   width: auto;
+   margin-right: 40px;
+   display: block;
+}
+.logo {
+   line-height: 70px;
+   display: block;
+   text-align: center;
+   img {
+      width: 190px;
+      height: 70px;
+   }
+}
+.navigation-menu {
+   margin-bottom: 0;
+   li {
+      float: left;
+      position: relative;
+
+      &:hover {
+         .submenu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+         }
+      }
+   }
+}
+.has-submenu {
+   a {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      line-height: 20px;
+      padding: 24px 17px;
+      position: relative;
+
+      &:hover {
+         color: #ffffff;
+      }
+   }
+
+   ul {
+      li {
+         a {
+            display: block;
+            padding: 9px 25px;
+            clear: both;
+            white-space: nowrap;
+            color: #6e768e;
+            font-size: 14.5px;
+
+            &:hover {
+               color: #458bc4;
+            }
+         }
+      }
+   }
+}
+.submenu {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1000;
+   padding: 10px 0;
+   min-width: 200px;
+   text-align: left;
+   opacity: 0;
+   visibility: hidden;
+   margin-top: 5px;
+   border-radius: 4px;
+   // -webkit-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+   transform: translateY(20px);
+   border: 1px solid #dee2e6;
+   background-color: #fff;
+
+   // li {
+   //    position: relative;
+
+   // }
+}
+.nav_active {
+   color: #fff !important;
+}
+.link_active {
+   color: #458bc4 !important;
+}

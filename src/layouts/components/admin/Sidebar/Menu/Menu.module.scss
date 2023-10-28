@@ -1,0 +1,68 @@
+.sidebar_menu {
+   a {
+      font-size: 14px;
+      display: block;
+      padding: 12px 20px;
+      margin: 2px 0;
+      position: relative;
+
+      &:hover {
+         background-color: #f1f1f1;
+         color: #458bc4;
+      }
+   }
+
+   ul {
+      li {
+         ul {
+            padding-left: 30px;
+            a {
+               padding: 7px 20px;
+            }
+         }
+      }
+   }
+   span {
+      vertical-align: middle;
+   }
+   .menu_title {
+      padding: 10px 20px;
+      letter-spacing: 0.05em;
+      pointer-events: none;
+      cursor: default;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      color: #6e768e;
+      font-weight: 600;
+   }
+   i {
+      display: inline-block;
+      line-height: 1.0625rem;
+      margin: 0 10px 0 3px;
+      text-align: center;
+      vertical-align: middle;
+      width: 20px;
+      font-size: 18px;
+   }
+}
+.active {
+   color: #458bc4 !important;
+}
+
+.icon_right {
+   float: right;
+   margin-top: 8px;
+   font-size: 11px;
+   transition: 0.3s ease-in-out;
+}
+.ul_close {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.3s ease-in-out;
+}
+.open {
+   max-height: 200px;
+}
+.routate_90 {
+   transform: rotate(90deg);
+}

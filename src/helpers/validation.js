@@ -16,8 +16,8 @@ function validateForm(formData, rules) {
             }
          }
 
-         if (ruleName === 'password' && formData[fieldName].length < 8) {
-            errors[fieldName] = 'Mật khẩu phải lớn hơn 8 ký tự'
+         if (ruleName === 'password' && formData[fieldName].length < 6) {
+            errors[fieldName] = 'Mật khẩu phải ít nhất 6 ký tự'
          }
 
          if (ruleName === 'password_confirmation' && formData[fieldName]) {
